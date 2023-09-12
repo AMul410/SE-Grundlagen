@@ -2,7 +2,7 @@
 
 ## About this project
 
-This is our joint Repository which we are using to learn C#
+This is our **joint Repository** which we are using to learn C#
 
 
 ## How to clone this Repository
