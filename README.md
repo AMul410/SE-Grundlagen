@@ -19,7 +19,7 @@ Code .
 
 ## Contributing
 
-**No** contributers are wish at this time.
+**No** contributers are wished at this time.
 
 ## License
 
