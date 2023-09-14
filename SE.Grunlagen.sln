@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taschenrechner", "Taschenre
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loops", "Loops\Loops.csproj", "{9DCE2C3C-182A-4FBD-B50C-272CFF971C47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kontrollstruckturen", "Kontrollstruckturen\Kontrollstruckturen.csproj", "{94392E55-5410-4ADE-99A0-B29901F1ED17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kontrollstruckturen", "Kontrollstruckturen\Kontrollstruckturen.csproj", "{94392E55-5410-4ADE-99A0-B29901F1ED17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functions", "Functions\Functions.csproj", "{330EDEFB-BD3A-4F28-A3B4-88A682AF4ACF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Functions", "Functions\Functions.csproj", "{330EDEFB-BD3A-4F28-A3B4-88A682AF4ACF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VariablenUndDatentypen", "VariablenUndDatentypen\VariablenUndDatentypen.csproj", "{159A2595-96E4-4E4E-97A2-B86F760EF447}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{330EDEFB-BD3A-4F28-A3B4-88A682AF4ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{330EDEFB-BD3A-4F28-A3B4-88A682AF4ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{330EDEFB-BD3A-4F28-A3B4-88A682AF4ACF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{159A2595-96E4-4E4E-97A2-B86F760EF447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{159A2595-96E4-4E4E-97A2-B86F760EF447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{159A2595-96E4-4E4E-97A2-B86F760EF447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{159A2595-96E4-4E4E-97A2-B86F760EF447}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
