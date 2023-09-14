@@ -24,6 +24,7 @@ while(i<5)
 {
   var xyz = 10;
   Console.WriteLine(hello);
+  i++;
 } // wenn ein Codeblock zugemacht wird sind alle Var die innerhalb des block dek wurden nicht mehr gülti => können nicht verwendet werden-
 
 // xyz
