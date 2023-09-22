@@ -12,7 +12,7 @@
         //     Wenn zahl von cards an index gleich query:
         if (cards[index] == query)
         {
-        //     wahr: gebe index zurück
+          //     wahr: gebe index zurück
           return index;
         }
         //     Inkrement index um 1
