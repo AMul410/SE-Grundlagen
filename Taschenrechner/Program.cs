@@ -2,13 +2,13 @@
 
 int GetNumber()
 {
-  int num = 0;
+  decimal num = 0;
   bool checkParse = false;
   do
   {
     Console.WriteLine("Gebe eine Zahl ein");
     string input = Console.ReadLine();
-    checkParse = int.TryParse(input, out num);
+    checkParse = decimal.TryParse(input, out num);
 
     if (checkParse == false)
     {
@@ -39,7 +39,7 @@ string GetOperation()
   return operation;
 }
 
-int Calculate(int num1, int num2, string operation)
+decimal Calculate(decimal num1, decimal num2, string operation)
 {
   switch (operation)
   {
@@ -66,6 +66,9 @@ var operation = GetOperation();
 var result = Calculate(num1,  num2, operation);
 
 Console.WriteLine($"{num1} {operation} {num2} = {result}");
+Console.WriteLine("Drücke beliebige Taste für weitere Berechnungen, oder beende das Programm mit Strg+C");
+Console.ReadKey();
+Console.Clear();
 
 
 
