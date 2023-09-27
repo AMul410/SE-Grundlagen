@@ -23,9 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms", "Algorithms\Al
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestAlgorithms", "TestAlgorithms\TestAlgorithms.csproj", "{4A26282D-2C8B-47DF-84BF-512D9401719E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlasseTaschenrechner", "KlasseTaschenrechner\KlasseTaschenrechner.csproj", "{4FBA6AFB-7AC8-43A9-A10F-99B1A0854AAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KlasseTaschenrechner", "KlasseTaschenrechner\KlasseTaschenrechner.csproj", "{4FBA6AFB-7AC8-43A9-A10F-99B1A0854AAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenOOP", "GrundlagenOOP\GrundlagenOOP.csproj", "{90309C02-412E-412C-B47F-4335805A8AF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrundlagenOOP", "GrundlagenOOP\GrundlagenOOP.csproj", "{90309C02-412E-412C-B47F-4335805A8AF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wörtel", "Wörtel\Wörtel.csproj", "{537550FA-A9A0-403B-A3D1-82512E59782F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{90309C02-412E-412C-B47F-4335805A8AF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90309C02-412E-412C-B47F-4335805A8AF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90309C02-412E-412C-B47F-4335805A8AF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{537550FA-A9A0-403B-A3D1-82512E59782F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{537550FA-A9A0-403B-A3D1-82512E59782F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{537550FA-A9A0-403B-A3D1-82512E59782F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{537550FA-A9A0-403B-A3D1-82512E59782F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
