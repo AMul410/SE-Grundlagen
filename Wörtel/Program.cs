@@ -12,50 +12,42 @@
  *                
  */
 var projectPath = Directory.GetCurrentDirectory();
-var csvPath = Path.Combine(projectPath,@"\words\valid_solutions.csv");
-var solutionsWordList = GetSolutionsFromFile(csvPath);
-{
-Random rng = new Random();
-var nextSolutionIndex = rng.Next(0, solutionWordList.Count);
+var csvPath = Path.Combine(projectPath, @"..\..\..\words\valid_solutions.csv");
+var solutionWordList = GetSolutionsFromFile(csvPath);
 
-var solutionWord = solutionWordList[nextSolutionIndex];
-solutionWord = solutionWord.ToUpper();
+var solutionWord = PickSolution(solutionWordList);
 
-  while (reader.EndOfStream == false)
-  {
-    var line = reader.ReadLine();
-    solutionWordList.Add(line);
-  }
-}
 
 string guess;
 while (true)
 {
-  Console.WriteLine("Errate das 5-Stellige Wort");
-  guess = Console.ReadLine();
-  guess = guess.ToUpper();
-  if (guess.Length != 5) continue;
+  guess = GetGuess("Errate das 5-Stellige Wort");
 
-  /*
-   Todo:
-   - Groß und Kleinschreibung
-   - Farbe zurücksetzung nach Ausgabe :Done
-   - Foreground color change to blauck; the default color change to white? :Done
-   - Ausgabe is dispalyed Horizonally instead of vertically :Done
-   - Wenn einmal vorkommende Buchstabe im guess zweimal vorkommt, dark das zweite Vorkommen    nicht Gelb sein
-   _ Versuche tählen und User feedback geben ob er das Wort erraten hat oder er alle Versuche verbraten hat
+
+  /* Todo:
+   - Groß- und Kleinschreibung :Done
+   - Farbe zurücksetzen nach Ausgabe :Done
+   - Vordergrundfarbe auf Schwarz ändern; Default Background vielleicht weiß? :Done
+   - Ausgabe in einer Zeile :Done
+   - Wenn einmal vorkommender Buchstabe im guess zweimal vorkommt, darf das zweite Vorkommen nicht Gelb sein
+   - Versuche zählen und User Feedback geben ob er das Wort erraten hat oder er alle Versuche verbraten hat
    */
   Console.ForegroundColor = ConsoleColor.Black;
-  Console.Beep(200, 1000);
   for (int i = 0; i < guess.Length; i++)
   {
     Console.BackgroundColor = ConsoleColor.White;
     if (solutionWord.Contains(guess[i]))
+    {
+      Console.Beep(200, 1000);
       Console.BackgroundColor = ConsoleColor.DarkYellow;
+    }
     if (solutionWord[i] == guess[i])
+    {
+      Console.Beep(400, 1000);
       Console.BackgroundColor = ConsoleColor.Green;
+      Console.BackgroundColor = ConsoleColor.Green;
+    }
     Console.Write($"{guess[i]}");
-
   }
   Console.BackgroundColor = ConsoleColor.Black;
   Console.ForegroundColor = ConsoleColor.White;
@@ -64,7 +56,7 @@ while (true)
 
 List<string> GetSolutionsFromFile(string path)
 {
-  var soulutions = new List<string>();
+  var solutions = new List<string>();
 
   using (var reader = new StreamReader(path))
   {
@@ -75,5 +67,24 @@ List<string> GetSolutionsFromFile(string path)
     }
   }
 
-  return soulutions;
+  return solutions;
+}
+
+string PickSolution(List<string> solutionWordList)
+{
+  Random rng = new Random();
+  var nextSolutionIndex = rng.Next(0, solutionWordList.Count);
+
+  var solutionWord = solutionWordList[nextSolutionIndex];
+  solutionWord = solutionWord.ToUpper();
+  return solutionWord;
+}
+
+string GetGuess(string prompt)
+{
+  Console.WriteLine(prompt);
+  guess = Console.ReadLine();
+  guess = guess.ToUpper();
+  if (guess.Length != 5) GetGuess(prompt);
+  return guess;
 }
